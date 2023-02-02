@@ -3,10 +3,11 @@ description: A flutter plugin for Kakao API, which supports Kakao login, KakaoTa
 version: 1.4.0
 homepage: https://github.com/kakao/kakao_flutter_sdk
 issue_tracker: https://github.com/kakao/kakao_flutter_sdk/issues
+publish_to: none
 
 environment:
   sdk: ">=2.14.0 <3.0.0"
-  flutter: '>=2.0.0'
+  flutter: ">=2.0.0"
 
 platforms:
   android:
@@ -16,7 +17,10 @@ platforms:
 dependencies:
   flutter:
     sdk: flutter
-  kakao_flutter_sdk_common: 1.4.0
+  kakao_flutter_sdk_common: #1.4.0
+    git:
+      url: https://github.com/donghyunlim/kakao_flutter.git
+      ref: 27f0ff8305d89cfe9cf80a6ec9188bd0e4588e2f
   kakao_flutter_sdk_auth: 1.4.0
   kakao_flutter_sdk_share: 1.4.0
   kakao_flutter_sdk_navi: 1.4.0
